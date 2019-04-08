@@ -1,0 +1,4 @@
+name: mgear-environment
+dependencies:
+  - python=2.7
+  - git
