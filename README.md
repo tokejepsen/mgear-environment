@@ -2,4 +2,6 @@
 
 A Conda based development environment for mGear.
 
-Windows only at the moment.
+# NOTES
+- Work in progress.
+- Windows only at the moment.
