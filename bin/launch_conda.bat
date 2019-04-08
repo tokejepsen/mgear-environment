@@ -34,16 +34,20 @@ set PATH=C:\Windows\System32;%INSTALLATION_DIRECTORY%\Scripts
 :: Activate conda by activating the root environment
 call activate root
 
-:: Ensure Avalon environment is setup
+:: Ensure mgear environment is setup
 IF EXIST %INSTALLATION_DIRECTORY%\envs\mgear-environment GOTO ENVIRONMENTEXISTS
 call conda env create -f %~dp0environment.yml
 :ENVIRONMENTEXISTS
 
-:: Activate Avalon environment
+:: Activate mgear environment
 call activate mgear-environment
 
-:: Initialize git
+:: Initialize git and submodules
+IF EXIST %~dp0avalon-setup\bin GOTO SUBMODULESEXISTS
 python %~dp0initialize_git.py
+git submodule update --init
+git submodule foreach --recursive git checkout master
+:SUBMODULESEXISTS
 
 :: Setup mGear
 set PATH=%~dp0;%PATH%
