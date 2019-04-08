@@ -1,0 +1,30 @@
+[submodule "bin\\animbits"]
+	path = bin\\animbits
+	url = https://github.com/mgear-dev/animbits.git
+[submodule "bin\\crank"]
+	path = bin\\crank
+	url = https://github.com/mgear-dev/crank.git
+[submodule "bin\\flex"]
+	path = bin\\flex
+	url = https://github.com/mgear-dev/flex.git
+[submodule "bin\\mgear_core"]
+	path = bin\\mgear_core
+	url = https://github.com/mgear-dev/mgear_core.git
+[submodule "bin\\rigbits"]
+	path = bin\\rigbits
+	url = https://github.com/mgear-dev/rigbits.git
+[submodule "bin\\mgear_dist"]
+	path = bin\\mgear_dist
+	url = https://github.com/mgear-dev/mgear_dist.git
+[submodule "bin\\shifter"]
+	path = bin\\shifter
+	url = https://github.com/mgear-dev/shifter.git
+[submodule "bin\\shifter_classic_components"]
+	path = bin\\shifter_classic_components
+	url = https://github.com/mgear-dev/shifter_classic_components.git
+[submodule "bin\\simpleRig"]
+	path = bin\\simpleRig
+	url = https://github.com/mgear-dev/simpleRig.git
+[submodule "bin\\synoptic"]
+	path = bin\\synoptic
+	url = https://github.com/mgear-dev/synoptic.git
