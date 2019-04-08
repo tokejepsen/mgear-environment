@@ -46,5 +46,5 @@ call activate mgear-environment
 python %~dp0initialize_git.py
 
 :: Setup mGear
-set PATH=%PATH%
-set PYTHONPATH=
+set PATH=%~dp0;%PATH%
+set PYTHONPATH=%~dp0mgear_dist\framework\scripts;%~dp0animbits\scripts;%~dp0crank\scripts;%~dp0flex\scripts;%~dp0mgear_core\scripts;%~dp0rigbits\scripts;%~dp0shifter\scripts;%~dp0shifter_classic_components\scripts;%~dp0simpleRig\scripts;%~dp0synoptic\scripts
