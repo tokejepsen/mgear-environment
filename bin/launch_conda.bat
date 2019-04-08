@@ -45,8 +45,7 @@ call activate mgear-environment
 :: Initialize git and submodules
 IF EXIST %~dp0avalon-setup\bin GOTO SUBMODULESEXISTS
 python %~dp0initialize_git.py
-git submodule update --init
-git submodule foreach --recursive git checkout master
+git submodule update --init --recursive
 :SUBMODULESEXISTS
 
 :: Setup mGear
